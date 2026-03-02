@@ -47,7 +47,7 @@ jobs:
             --config exampleSite/hugo.toml \
             --contentDir exampleSite/content \
             --gc --minify \
-            --baseURL "https://othiagob.github.io/javablog/"
+            --baseURL "https://othiagob.github.io/javac/"
 
       - name: Setup Pages
         uses: actions/configure-pages@v4

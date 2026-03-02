@@ -2,7 +2,7 @@
 
 Blog pessoal de Thiago B. — programação, Java e Tibia.
 
-**Acesse:** https://othiagob.github.io/javablog/
+**Acesse:** https://othiagob.github.io/javac/
 
 ---
 

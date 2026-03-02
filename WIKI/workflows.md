@@ -25,7 +25,7 @@ Disparado automaticamente em todo push na branch `main`.
 | Deploy | Publica no GitHub Pages |
 
 **Resultado:** Após ~2-3 minutos do push, o site atualiza em:
-`https://othiagob.github.io/javablog/`
+`https://othiagob.github.io/javac/`
 
 ## Como funciona o deploy
 
