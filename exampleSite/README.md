@@ -1,29 +1,44 @@
-# hugoBasicExample
+# exampleSite/
 
-This repository offers an example site for [Hugo](https://gohugo.io/) and also it provides the default content for demos hosted on the [Hugo Themes Showcase](https://themes.gohugo.io/).
+Esta é a pasta mais importante para o dia a dia do blog.
+É aqui que ficam a **configuração principal** e todo o **conteúdo** do site.
 
-# Using
+## Arquivos de configuração
 
-1. [Install Hugo](https://gohugo.io/overview/installing/)
-2. Clone this repository
+| Arquivo | O que faz | Pode editar? |
+|---------|-----------|--------------|
+| `hugo.toml` | **Configuração principal** — título, idioma, menus, redes sociais, cor do tema | ✅ Sim — principal arquivo de configuração |
+| `go.default.mod` | Define o módulo Hugo para build standalone (copiado para `go.mod` no build) | ⚠️ Não edite — parte do sistema de build |
+| `go.toml` | Módulo alternativo que importa o tema do GitHub (usado no Vercel) | ⚠️ Não edite |
+| `.gitignore` | Ignora a pasta `public/` (gerada pelo Hugo) no Git | ⚠️ Não edite |
 
-```bash
-git clone https://github.com/gohugoio/hugoBasicExample.git
-cd hugoBasicExample
+## Subpastas
+
+```
+exampleSite/
+├── hugo.toml   → Configuração do blog
+├── content/    → Todos os textos e posts (edite aqui!)
+├── layouts/    → Sobrescritas de layout (vazia, para customizações futuras)
+└── static/     → Arquivos estáticos específicos do site (imagens, etc.)
 ```
 
-3. Clone the repository you want to test. If you want to test all Hugo Themes then follow the instructions provided [here](https://github.com/gohugoio/hugoThemes#installing-all-themes)
+## Principais configurações do hugo.toml
 
-4. Run Hugo and select the theme of your choosing
+```toml
+title = "Public Java"          # Nome do blog (aparece no cabeçalho e aba do browser)
+author = "Thiago B."           # Seu nome (aparece nos posts)
+copyright = "© 2026, ..."      # Rodapé
 
-```bash
-hugo server -t YOURTHEME
+[params]
+  color = 'linen'              # Cor de fundo: linen, wheat, gray, light
+  github = 'othiagob'          # Seu usuário do GitHub (ícone aparece no header)
+  name = 'Thiago B.'           # Nome exibido no perfil da homepage
+  bio = '...'                  # Descrição curta exibida na homepage
+
+[[menu.main]]                  # Links do menu de navegação
 ```
 
-5. Under `/content/` this repository contains the following:
+## ⚠️ Cuidados
 
-- A section called `/post/` with sample markdown content
-- A headless bundle called `homepage` that you may want to use for single page applications. You can find instructions about headless bundles over [here](https://gohugo.io/content-management/page-bundles/#headless-bundle)
-- An `about.md` that is intended to provide the `/about/` page for a theme demo
-
-6. If you intend to build a theme that does not fit in the content structure provided in this repository, then you are still more than welcome to submit it for review at the [Hugo Themes](https://github.com/gohugoio/hugoThemes/issues) repository
+- Mudar `baseURL` pode quebrar links — deixe como está a menos que mude de domínio
+- Mudar `theme` pode fazer o site não carregar se o tema não for encontrado

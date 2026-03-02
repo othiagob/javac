@@ -1,7 +1,7 @@
 ---
-title: 'We Help Business Grow'
-button: 'Our Work'
+title: 'Aprendendo em público'
+button: 'Ver posts'
 weight: 1
 ---
 
-Lorem ipsum dolor sit amet, et essent mediocritatem quo, choro volumus oporteat an mei. Numquam dolores mel eu, mea docendi omittantur et, mea ea duis erat. Elit melius cu ius. Per ex novum tantas putant, ei his nullam aliquam apeirian. Aeterno quaestio constituto sea an, no eum intellegat assueverit.
+Estudo programação e documento tudo aqui. Cada post é uma nota de aprendizado — pode ser sobre Java, algoritmos ou uma sessão no Tibia. Nada de conteúdo perfeito: só progresso real.

@@ -1,7 +1,7 @@
 ---
-title: 'Our Difference'
-button: 'About us'
+title: 'Quem sou eu'
+button: 'Sobre'
 weight: 2
 ---
 
-Lorem ipsum dolor sit amet, et essent mediocritatem quo, choro volumus oporteat an mei. Ipsum dolor sit amet, et essent mediocritatem quo.
+Sou o Thiago, estudante de programação apaixonado por tecnologia e jogos. Este blog é o meu diário de bordo: registro o que aprendo, erro e descubro.

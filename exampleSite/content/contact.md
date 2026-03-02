@@ -1,10 +1,8 @@
 +++
-title = "Contact"
-description = "Hugo, the world's fastest framework for building websites"
-date = "2019-02-28"
-aliases = ["about-us", "about-hugo", "contact"]
-author = "lee.so"
+title = "Contato"
+description = "Entre em contato"
+date = "2026-03-02"
+author = "Thiago B."
 +++
 
-- [github.com/nanxiaobei](https://github.com/nanxiaobei)
-- [lee.so](https://lee.so)
+- [github.com/othiagob](https://github.com/othiagob)
