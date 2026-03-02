@@ -1,151 +1,133 @@
-# Thiago's Java Learning Blog
+<div align="center">
 
-Um blog minimalista e sofisticado para documentar minha jornada de aprendizado em Java, construído com React, TypeScript, Tailwind CSS e implantado automaticamente no GitHub Pages.
+gorgeous framer templates ☞ [21beats.lemonsqueezy.com](https://21beats.lemonsqueezy.com/)
 
-## 🎯 Características
+your online home screen ☞ [kee.so](https://kee.so/)
 
-- **Design Minimalista**: Tipografia elegante com Playfair Display para títulos e Inter para corpo
-- **Paleta Sofisticada**: Verde floresta (#2D5016) com fundo creme (#F5F3F0)
-- **Renderização Markdown**: Posts em Markdown renderizados com Streamdown
-- **Tema Claro/Escuro**: Suporte automático para preferência do sistema
-- **Responsivo**: Design mobile-first que funciona em todos os dispositivos
-- **Deploy Automático**: GitHub Actions compila e publica automaticamente no GitHub Pages
+</div>
 
-## 🚀 Como Começar
+---
 
-### Pré-requisitos
+<div align="center">
+<h1>Paper <sup><sup><sub>6.30</sub></sup></sup></h1>
 
-- Node.js 22+
-- pnpm 10+
+Demo → [hugo-paper.vercel.app](https://hugo-paper.vercel.app/)
 
-### Instalação
+A simple, clean, customizable Hugo theme.
+
+⚡️ Fast | 👒 Customizable | 🫙 Smooth
+
+</div>
+
+## Links
+
+Product Hunt: [producthunt.com/posts/hugo-paper-6](https://www.producthunt.com/posts/hugo-paper-6)
+
+Hugo themes: [themes.gohugo.io/hugo-paper](https://themes.gohugo.io/hugo-paper/)
+
+## Overview
+
+![](./images/screenshot.png)
+![](./images/screenshot_dark.png)
+![](./images/pagespeed.png)
+
+## Options
+
+Available options to `config.toml` or `hugo.toml`:
+
+```toml
+[services]
+  [services.disqus]
+    shortname = 'YOUR_DISQUS_SHORTNAME'     # use disqus comments
+
+[params]
+  # color style
+  color = 'linen'                           # linen, wheat, gray, light
+
+  # header social icons
+  twitter = 'YOUR_TWITTER_ID'               # twitter.com/YOUR_TWITTER_ID
+  github = 'YOUR_GITHUB_ID'                 # github.com/YOUR_GITHUB_ID
+  instagram = 'YOUR_INSTAGRAM_ID'           # instagram.com/YOUR_INSTAGRAM_ID
+  linkedin = 'YOUR_LINKEDIN_ID'             # linkedin.com/in/YOUR_LINKEDIN_ID
+  mastodon = 'YOUR_MASTODON_LINK'           # e.g. 'https://mastodon.instance/@xxx'
+  threads = '@YOUR_THREADS_ID'              # threads.net/@YOUR_THREADS_ID
+  bluesky = 'YOUR_BLUESKY_ID'               # https://bsky.app/profile/YOUR_BLUESKY_ID
+  rss = true                                # show rss icon
+
+  # home page profile
+  avatar = 'GRAVATAR_EMAIL'                 # gravatar email or image url
+  name = 'YOUR_NAME'
+  bio = 'YOUR_BIO'
+
+
+  # misc
+  disableHLJS = true                        # disable highlight.js
+  disablePostNavigation = true              # disable post navigation
+  monoDarkIcon = true                       # show monochrome dark mode icon
+  gravatarCdn = 'GRAVATAR_CDN_LINK'         # e.g. 'https://cdn.v2ex.com/gravatar/'
+  math = true                               # enable KaTeX math typesetting globally
+  localKatex = false                        # use local KaTeX js/css instead of CDN
+  graphCommentId = "YOUR_GRAPH_COMMENT_ID"  # use graph comment (disqus alternative)
+  favicon = "favicon.ico"                   # customize the default favicon
+  appleTouchIcon = "apple-touch-icon.png"   # customize the default Apple touch icon
+
+  # RTL supprot
+  direction = "rtl"                         # RTL support for Right-to-left languages
+
+  # giscus
+[params.giscus]
+  repo = 'YOUR_GISCUS_REPO'                 # see https://giscus.app for more details
+  repoId = 'YOUR_GISCUS_REPO_ID'
+  category = 'YOUR__GISCUS_CATEGORY'
+  categoryId = 'YOUR_GISCUS_CATEGORY_ID'
+  mapping = 'pathname'
+  theme = 'light'
+  lang = 'zh-CN'
+```
+
+Available options to front matter:
+
+```toml
+comments = false                            # disable comments for a specific page
+math = true                                 # enable KaTeX math typesetting for a specific page
+```
+
+## Install
+
+### As git submodule
+
+Inside the folder of your Hugo project, run:
 
 ```bash
-# Clonar o repositório
-git clone https://github.com/othiagob/blog.git
-cd blog
-
-# Instalar dependências
-pnpm install
-
-# Iniciar servidor de desenvolvimento
-pnpm run dev
+git submodule add https://github.com/nanxiaobei/hugo-paper themes/paper
 ```
 
-O blog estará disponível em `http://localhost:3000`
+Open `config.toml`(or `hugo.toml`), change `theme` to `"paper"`:
 
-## 📝 Criando Novos Posts
-
-Posts são arquivos Markdown localizados em `/posts/`. Cada post deve ter o seguinte formato:
-
-```markdown
----
-title: "Título do Post"
-date: "2026-03-01"
-category: "Categoria"
-excerpt: "Um resumo breve do post"
-readingTime: 8
----
-
-# Título do Post
-
-Conteúdo do post em Markdown...
+```toml
+theme = "paper"
 ```
 
-Após criar um novo post, faça commit e push para o repositório. O GitHub Actions automaticamente compilará o blog e publicará no GitHub Pages.
+For more information, please read the [official guide](https://gohugo.io/getting-started/quick-start/#configure-the-site) of Hugo.
 
-### Campos Obrigatórios
+### As hugo module
 
-- **title**: Título do post
-- **date**: Data no formato YYYY-MM-DD
-- **category**: Categoria do post (ex: "Fundamentos", "Avançado")
-- **excerpt**: Resumo breve (aparece na lista de posts)
-- **readingTime**: Tempo estimado de leitura em minutos
-
-## 🏗️ Estrutura do Projeto
-
-```
-blog/
-├── client/
-│   ├── public/              # Arquivos estáticos (favicon, robots.txt)
-│   ├── src/
-│   │   ├── components/      # Componentes React reutilizáveis
-│   │   ├── hooks/           # Custom hooks (usePosts)
-│   │   ├── pages/           # Páginas (Home, Post, Category)
-│   │   ├── contexts/        # Contextos React (ThemeContext)
-│   │   ├── App.tsx          # Roteamento principal
-│   │   ├── main.tsx         # Ponto de entrada
-│   │   └── index.css        # Estilos globais e temas
-│   └── index.html           # HTML principal
-├── posts/                   # Posts em Markdown
-├── .github/
-│   └── workflows/
-│       └── deploy.yml       # GitHub Actions workflow
-├── vite.config.ts           # Configuração Vite
-└── package.json             # Dependências e scripts
-```
-
-## 🎨 Design Philosophy
-
-Este blog segue a filosofia de **Modernismo Tipográfico Minimalista**:
-
-- **Tipografia como Protagonista**: Hierarquia clara através de pesos e tamanhos
-- **Espaço Negativo Generoso**: Respiração visual entre elementos
-- **Paleta Monocromática**: Fundo creme com verde floresta como acento
-- **Foco no Conteúdo**: Sem distrações, apenas o essencial
-
-## 📦 Build e Deploy
-
-### Build Local
+Add paper theme ad dependency of your site:
 
 ```bash
-pnpm run build
+hugo mod init github.com/<your_user>/<your_project>
 ```
 
-Gera os arquivos estáticos em `dist/public/`
+Open `config.toml`(or `hugo.toml`), remove the `theme` line (if present), add `module` section to the bottom of the file:
 
-### Deploy Automático
+```toml
+[module]
+  [[module.imports]]
+    path = "github.com/nanxiaobei/hugo-paper"
+```
 
-O repositório está configurado com GitHub Actions. Cada push para a branch `main` dispara automaticamente:
+For more information, please read the [official guide](https://gohugo.io/hugo-modules/use-modules/#use-a-module-for-a-theme) of Hugo.
 
-1. Instalação de dependências
-2. Build do projeto
-3. Deploy para GitHub Pages
+## License
 
-O blog estará disponível em: `https://othiagob.github.io/blog/`
-
-## 🛠️ Scripts Disponíveis
-
-- `pnpm run dev` - Inicia servidor de desenvolvimento
-- `pnpm run build` - Compila para produção
-- `pnpm run preview` - Visualiza build de produção localmente
-- `pnpm run check` - Verifica tipos TypeScript
-- `pnpm run format` - Formata código com Prettier
-
-## 📚 Posts Inclusos
-
-1. **Introdução ao Java: Primeiros Passos** - Configuração do ambiente e primeiro programa
-2. **Variáveis e Tipos de Dados em Java** - Tipos primitivos e conversões
-3. **Estruturas de Controle: if, else e switch** - Tomando decisões em código
-
-## 🎓 Tecnologias Utilizadas
-
-- **React 19**: Framework UI
-- **TypeScript**: Tipagem estática
-- **Tailwind CSS 4**: Utility-first CSS
-- **Vite**: Build tool
-- **Wouter**: Roteamento leve
-- **Streamdown**: Renderização Markdown
-- **shadcn/ui**: Componentes UI
-
-## 📄 Licença
-
-MIT
-
-## 👨‍💻 Autor
-
-Thiago - Estudante de Ciência da Computação aprendendo autodidatamente TypeScript, Node.js e React.
-
----
-
-**Última atualização**: Março de 2026
+[MIT License](https://github.com/nanxiaobei/hugo-paper/blob/main/LICENSE) (c) [nanxiaobei](https://lee.so/)
