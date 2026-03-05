@@ -1,30 +1,10 @@
-# Compiled Object files, Static and Dynamic libs (Shared Objects)
-*.o
-*.a
-*.so
-
-# Folders
-_obj
-_test
-
-# Architecture specific extensions/prefixes
-*.[568vq]
-[568vq].out
-
+# Arquivos gerados
 go.mod
 go.sum
-*.cgo1.go
-*.cgo2.c
-_cgo_defun.c
-_cgo_gotypes.go
-_cgo_export.*
 
-_testmain.go
-
-*.exe
-*.test
-
+# Build artifacts
 /public
-/themes
-.DS_Store
 .hugo_build.lock
+
+# Sistema
+.DS_Store
