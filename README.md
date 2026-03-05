@@ -1,4 +1,4 @@
-# Public Java
+# String[] args
 
 Blog pessoal de Thiago B. — programação, Java e Tibia.
 

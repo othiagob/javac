@@ -25,7 +25,7 @@ exampleSite/
 ## Principais configurações do hugo.toml
 
 ```toml
-title = "Public Java"          # Nome do blog (aparece no cabeçalho e aba do browser)
+title = "String[] args"        # Nome do blog (aparece no cabeçalho e aba do browser)
 author = "Thiago B."           # Seu nome (aparece nos posts)
 copyright = "© 2026, ..."      # Rodapé
 

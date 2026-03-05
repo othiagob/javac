@@ -1,4 +1,4 @@
-# WIKI — Public Java
+# WIKI — String[] args
 
 Documentação completa do projeto. Cada arquivo explica uma pasta do blog:
 o que cada arquivo faz, o que pode ser editado e o risco de cada mudança.

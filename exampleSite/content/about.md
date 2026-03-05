@@ -1,6 +1,6 @@
 +++
 title = "Sobre"
-description = "Sobre o blog Public Java"
+description = "Sobre o blog String[] args"
 date = "2026-03-02"
 author = "Thiago B."
 +++

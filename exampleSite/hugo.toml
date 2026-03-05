@@ -1,7 +1,7 @@
 baseURL = "https://othiagob.github.io/javac/"
 title = "String[] args"
 author = "Thiago B."
-copyright = "© 2026, Public Java"
+copyright = "© 2026, String[] args"
 languageCode = "pt-BR"
 DefaultContentLanguage = "pt"
 defaultContentLanguageInSubdir = false
@@ -19,6 +19,7 @@ ignoreErrors = ["error-remote-getjson"]
 [params]
   color = 'linen'
   github = 'othiagob'
+  monoDarkIcon = true
 
   avatar = ''
   name = 'Thiago B.'

@@ -1,5 +1,5 @@
 +++
-title = "Bem-vindo ao Public Java"
+title = "Bem-vindo ao String[] args"
 date = "2026-03-02"
 description = "O início do blog — o que vou escrever aqui e por quê."
 tags = ["meta", "inicio"]
@@ -7,7 +7,7 @@ categories = ["Geral"]
 author = "Thiago B."
 +++
 
-Olá! Este é o primeiro post do **Public Java**.
+Olá! Este é o primeiro post do **String[] args**.
 
 ## O que é isso aqui?
 
