@@ -21,7 +21,7 @@ ignoreErrors = ["error-remote-getjson"]
   github = 'othiagob'
   monoDarkIcon = true
 
-  avatar = '/images/java.png'
+  avatar = '/images/javalogo.png'
   name = ''
   bio = ''
 # ------------------------------

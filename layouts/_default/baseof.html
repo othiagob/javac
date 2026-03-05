@@ -22,7 +22,7 @@
 
 <!-- avatar_url -->
 {{- if site.Params.avatar -}}<!---->
-{{- if in site.Params.avatar "http" -}}<!---->
+{{- if or (in site.Params.avatar "http") (hasPrefix site.Params.avatar "/") -}}<!---->
 {{- $.Scratch.Set "avatar_url" site.Params.avatar -}}<!---->
 {{- else -}}<!---->
 {{- $official_cdn := "https://www.gravatar.com/avatar/" -}}<!---->
