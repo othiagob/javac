@@ -39,13 +39,13 @@ jobs:
         run: bun run build:css
 
       - name: Prepare Hugo modules
-        run: cp exampleSite/go.default.mod exampleSite/go.mod
+        run: cp site/go.default.mod site/go.mod
 
       - name: Build site
         run: |
           hugo \
-            --config exampleSite/hugo.toml \
-            --contentDir exampleSite/content \
+            --config site/hugo.toml \
+            --contentDir site/content \
             --gc --minify \
             --baseURL "https://othiagob.github.io/javac/"
 
