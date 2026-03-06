@@ -11,8 +11,8 @@
 
 @theme {
   --w: calc(680px + 32px * 2);
-  --font-serif: "Ubuntu", sans-serif;
-  --font-sans: "Ubuntu", sans-serif;
+  --font-serif: "Inter", sans-serif;
+  --font-sans: "Inter", sans-serif;
 }
 
 @layer base {
