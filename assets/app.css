@@ -11,8 +11,8 @@
 
 @theme {
   --w: calc(680px + 32px * 2);
-  --font-serif: "Merriweather", Georgia, serif;
-  --font-sans: "Merriweather", Georgia, serif;
+  --font-serif: "IBM Plex Sans", "Noto Sans", "Liberation Sans", "Segoe UI", Roboto, Ubuntu, Cantarell, Arial, sans-serif;
+  --font-sans: "IBM Plex Sans", "Noto Sans", "Liberation Sans", "Segoe UI", Roboto, Ubuntu, Cantarell, Arial, sans-serif;
 }
 
 @layer base {

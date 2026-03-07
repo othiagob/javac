@@ -1,12 +1,12 @@
 /* Place custom css here. */
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;700&display=swap');
 
 :root:not(#\#),
 :host:not(#\#) {
-	--font-sans: 'Merriweather', 'Noto Serif', 'Liberation Serif', Georgia, 'Times New Roman', serif;
-	--font-serif: 'Merriweather', 'Noto Serif', 'Liberation Serif', Georgia, 'Times New Roman', serif;
+	--font-sans: 'IBM Plex Sans', 'Noto Sans', 'Liberation Sans', 'Segoe UI', Roboto, Ubuntu, Cantarell, Arial, sans-serif;
+	--font-serif: 'IBM Plex Sans', 'Noto Sans', 'Liberation Sans', 'Segoe UI', Roboto, Ubuntu, Cantarell, Arial, sans-serif;
 	--default-font-family: var(--font-sans);
-	--default-mono-font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+	--default-mono-font-family: 'IBM Plex Mono', 'JetBrains Mono', 'Cascadia Code', 'Fira Code', 'Source Code Pro', SFMono-Regular, Consolas, 'Liberation Mono', Menlo, Monaco, monospace;
 	--dot-size: 22px;
 	--dot-opacity-light: 0.11;
 	--dot-opacity-dark: 0.14;
@@ -15,7 +15,14 @@
 html,
 body,
 body * {
-	font-family: 'Merriweather', 'Noto Serif', 'Liberation Serif', Georgia, 'Times New Roman', serif !important;
+	font-family: 'IBM Plex Sans', 'Noto Sans', 'Liberation Sans', 'Segoe UI', Roboto, Ubuntu, Cantarell, Arial, sans-serif !important;
+}
+
+code,
+pre,
+kbd,
+samp {
+	font-family: var(--default-mono-font-family) !important;
 }
 
 body {
